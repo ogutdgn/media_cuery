@@ -1,0 +1,108 @@
+nav ul li {
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+}
+nav ul li{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: white;
+}
+nav ul li:hover{
+    background-color: green;
+    color: red;
+    cursor: pointer;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    border: 10px solid blue;
+    border-radius: 30px;
+    background-color: green;
+    padding: 50px;
+    width: 50%;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+h1:hover{
+    color: red;
+    background-color: blueviolet;
+}
+
+@media screen and (min-width: 600px){
+    ul{
+        background-color: gray;
+        height: 50px;
+    }
+    .second{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body{
+        background-color: olive;
+    }
+    
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    h1:hover{
+        color: blueviolet;
+        background-color: darkgoldenrod;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        background-color: orange;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    h1:hover{
+        color: darkgreen;
+        background-color:darkgrey;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: purple;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-weight: 700;
+        padding: 5px;
+        width: 90%;
+        border: 1px solid rgb(189, 181, 181);
+        background-color: cyan;
+    }
+    h1:hover{
+        color: greenyellow;
+        background-color: indigo;
+    }
+    .first{
+        display: none;
+    }
+    h1{
+        border: 10px solid red;
+        background-color: purple;
+    }
+}
